@@ -36,12 +36,12 @@
 
   let west(slide-info, body) = {
     box(
-      width: 20%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
+      width: 30%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
       stroke: none, fill: my-dark,
       align( left + horizon, displayed-title(slide-info) )
     )
     box(
-      width: 80%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
+      width: 70%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
       stroke: none, fill: my-bright,
       align(left + horizon, text(fill: my-dark, body))
     )
@@ -49,12 +49,12 @@
 
   let east(slide-info, body) = {
     box(
-      width: 80%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
+      width: 70%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
       stroke: none, fill: my-bright,
       align(right + horizon, text(fill: my-dark, body))
     )
     box(
-      width: 20%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
+      width: 30%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
       stroke: none, fill: my-dark,
       align( right + horizon, displayed-title(slide-info) )
     )
