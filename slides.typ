@@ -185,7 +185,7 @@
 
 #let one-by-one(start: 1, ..children) = {
     repetitions.update(rep => calc.max(rep, start + children.pos().len() - 1))
-    for (idx, child) in children.pos().enumerate() {
+    for idx, child in children.pos().enumerate() {
         beginning(start + idx, child)
     }
 }
