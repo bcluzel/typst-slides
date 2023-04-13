@@ -34,6 +34,21 @@
     []
   }
 
+
+  let top(slide-info, body) = {
+    box(
+      width: 100%, height: 10%, outset: 0em, inset: (y: 1em), baseline: 0em,
+      stroke: none, fill: my-dark,
+      align( center + horizon, displayed-title(slide-info) )
+    )
+    box(
+      width: 100%, height: 90%, outset: 0em, inset: (y: 1em), baseline: 0em,
+      stroke: none, fill: my-bright,
+      align(center + horizon, text(fill: my-dark, body))
+    )
+  }
+
+
   let west(slide-info, body) = {
     box(
       width: 30%, height: 100%, outset: 0em, inset: (x: 1em), baseline: 0em,
@@ -70,6 +85,6 @@
 
   (
     title-slide: title-slide,
-    variants: ( "default": west, "east": east, "wake up": wake-up ),
+    variants: ( "default": west, "east": east, "top": top, "wake up": wake-up ),
   )
 }
